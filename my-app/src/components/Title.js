@@ -18,7 +18,7 @@ class Title extends Component {
         <h2>{this.props.text}</h2>
         <h2>your age is: {this.props.age}</h2>
         <h3>Cats: {this.props.pets.cats}</h3>
-        <h3>dogs: {this.props.pets.dogs}</h3>
+        <h3> dogs: {this.props.pets.dogs}</h3>
         <hr />
       </div>
     );
