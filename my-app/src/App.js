@@ -5,7 +5,7 @@ import "./App.css";
 
 class App extends Component {
   render() {
-    return <Title name="Mário Rodeghiero" />;
+    return <Title name="Mário Rodeghiero" text="Welcome to..." age={30} />;
   }
 }
 
