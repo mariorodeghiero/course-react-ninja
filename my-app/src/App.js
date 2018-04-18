@@ -4,6 +4,8 @@ import Title from "./components/Title";
 import "./App.css";
 import Square from "./components/square";
 import Button from "./components/button";
+import SeachButton from "./components/search-button";
+import SearchButton from "./components/search-button";
 
 class App extends Component {
   render() {
@@ -20,7 +22,8 @@ class App extends Component {
           ))}
         </div>
         <Title name="Mário Rodeghiero" text="Welcome to..." age={30} />
-        <Button onClick="console.log('tex')">Click</Button>
+        <Button>Click</Button>
+        <SearchButton />
       </div>
     );
   }
