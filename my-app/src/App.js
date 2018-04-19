@@ -6,6 +6,7 @@ import Square from "./components/square";
 import Button from "./components/button";
 import SeachButton from "./components/search-button";
 import SearchButton from "./components/search-button";
+import Estado from "./components/state-full";
 
 class App extends Component {
   render() {
@@ -24,6 +25,8 @@ class App extends Component {
         <Title name="Mário Rodeghiero" text="Welcome to..." age={30} />
         <Button>Click</Button>
         <SearchButton />
+        <br />
+        <Estado />
       </div>
     );
   }
