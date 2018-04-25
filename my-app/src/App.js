@@ -7,6 +7,7 @@ import Button from "./components/button";
 import SeachButton from "./components/search-button";
 import SearchButton from "./components/search-button";
 import Estado from "./components/state-full";
+import ChangedState from "./components/change-square";
 
 class App extends Component {
   render() {
@@ -27,6 +28,8 @@ class App extends Component {
         <SearchButton />
         <br />
         <Estado />
+        <br />
+        <ChangedState />
       </div>
     );
   }
