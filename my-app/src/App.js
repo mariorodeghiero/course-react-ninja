@@ -29,7 +29,10 @@ class App extends Component {
         <br />
         <Estado />
         <br />
+        <hr />
         <ChangedState />
+        <br />
+        <hr />
       </div>
     );
   }
