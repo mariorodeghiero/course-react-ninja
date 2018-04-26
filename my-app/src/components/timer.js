@@ -22,9 +22,16 @@ class Timer extends React.Component {
   stopTimer() {
     clearInterval(this.interval);
   }
+
   startTimer() {
     clearInterval(this.interval);
     this.interval = setInterval(() => this.tick(), 1000);
+  }
+
+  resetTimer() {
+    this.stopTimer();
+    this.state.seconds = 0;
+    this.startTimer();
   }
 
   render() {
@@ -33,6 +40,7 @@ class Timer extends React.Component {
         Seconds: {this.state.seconds}
         <button onClick={this.startTimer.bind(this)}>Start</button>
         <button onClick={this.stopTimer.bind(this)}>Stop</button>
+        <button onClick={this.resetTimer.bind(this)}>Reset</button>
       </div>
     );
   }
